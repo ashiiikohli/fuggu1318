@@ -74,87 +74,77 @@ font-size:22px;
 /* ================= NEW ARRIVAL ================= */
 
 .new-arrival{
-padding:80px 5%;
-background:#fff;
+    background:#fff;
+    padding:60px 0;
+    overflow:hidden;
 }
 
 .new-arrival h2{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-letter-spacing:3px;
-}
-
-.new-arrival{
-padding:80px 5%;
-background:#fff;
-overflow:hidden;
+    text-align:center;
+    font-size:36px;
+    margin-bottom:35px;
+    letter-spacing:2px;
 }
 
 .arrival-slider{
-display:flex;
-gap:25px;
-overflow-x:auto;
-overflow-y:hidden;
-white-space:nowrap;
-padding-bottom:10px;
+    display:flex;
+    gap:25px;
+    width:max-content;
+    animation:move 25s linear infinite;
 }
 
-.arrival-slider::-webkit-scrollbar{
-display:none;
+.arrival-slider:hover{
+    animation-play-state:paused;
 }
+
 .product{
-width:250px;
-background:#fff;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.15);
-transition:.4s;
-flex-shrink:0;
-}
-
-.product:hover{
-transform:translateY(-10px);
+    flex:0 0 auto;
+    text-align:center;
 }
 
 .product img{
-width:100%;
-height:330px;
-object-fit:cover;
-transition:.5s;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #000;
+    transition:.4s;
+    cursor:pointer;
 }
 
-.product:hover img{
-transform:scale(1.1);
-}
-
-.product h3{
-padding:15px 15px 5px;
-font-size:18px;
+.product img:hover{
+    transform:scale(1.15);
+    border-color:#d4af37;
 }
 
 .product p{
-padding:0 15px 15px;
-font-size:18px;
-font-weight:bold;
+    margin-top:10px;
+    font-size:14px;
+    font-weight:bold;
+    color:#000;
+}
+
+@keyframes move{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
 }
 
 @media(max-width:768px){
 
-.new-arrival h2{
-font-size:28px;
-}
-
-.product{
-width:180px;
-}
-
 .product img{
-height:240px;
+    width:85px;
+    height:85px;
 }
 
+.new-arrival h2{
+    font-size:28px;
 }
-  
+
+}  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
@@ -180,65 +170,54 @@ height:240px;
 <div class="arrival-slider">
 
 <div class="product">
-<img src="product1.jpg">
-<h3>Premium Shirt</h3>
-<p>Shop now</p>
+    <img src="product1.jpg" alt="">
+    <p>Shirt</p>
 </div>
 
 <div class="product">
-<img src="product2.jpg">
-<h3>Casual Wear</h3>
-<p>Shop now</p>
+    <img src="product2.jpg" alt="">
+    <p>Polo</p>
 </div>
 
 <div class="product">
-<img src="product3.jpg">
-<h3>Office Wear</h3>
-<p>Shop now</p>
+    <img src="product3.jpg" alt="">
+    <p>Denim</p>
 </div>
 
 <div class="product">
-<img src="product4.jpg">
-<h3>Summer Collection</h3>
-<p>Shop now</p>
+    <img src="product4.jpg" alt="">
+    <p>Casual</p>
 </div>
 
 <div class="product">
-<img src="product5.jpg">
-<h3>Formal Shirt</h3>
-<p>Shop now</p>
+    <img src="product5.jpg" alt="">
+    <p>Hoodie</p>
 </div>
 
 <div class="product">
-<img src="product6.jpg">
-<h3>Premium Polo</h3>
-<p>Shop now</p>
+    <img src="product6.jpg" alt="">
+    <p>Jacket</p>
 </div>
 
 <div class="product">
-<img src="product7.jpg">
-<h3>Denim Wear</h3>
-<p>Shop now</p>
+    <img src="product7.jpg" alt="">
+    <p>Classic</p>
 </div>
 
 <div class="product">
-<img src="product8.jpg">
-<h3>Luxury Tee</h3>
-<p>Shop now</p>
+    <img src="product8.jpg" alt="">
+    <p>Premium</p>
 </div>
 
 <div class="product">
-<img src="product9.jpg">
-<h3>Classic Wear</h3>
-<p>Shop now</p>
+    <img src="product9.jpg" alt="">
+    <p>Formal</p>
 </div>
 
 <div class="product">
-<img src="product10.jpg">
-<h3>New Collection</h3>
-<p>Shop now</p>
-</div>
-  
+    <img src="product10.jpg" alt="">
+    <p>New</p>
+</div>  
 </section>
   
 <script>

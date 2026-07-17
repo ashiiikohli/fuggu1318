@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fashion Store</title>
+<title>Mojopanda</title>
 
 <style>
 
@@ -94,19 +94,15 @@ overflow:hidden;
 .arrival-slider{
 display:flex;
 gap:25px;
-overflow:hidden;
+overflow-x:auto;
+overflow-y:hidden;
 white-space:nowrap;
-animation:scroll 25s linear infinite;
+padding-bottom:10px;
 }
 
-.product{
-min-width:250px;
-flex:0 0 auto;
+.arrival-slider::-webkit-scrollbar{
+display:none;
 }
-.arrival-slider:hover{
-animation-play-state:paused;
-}
-
 .product{
 width:250px;
 background:#fff;
@@ -141,19 +137,6 @@ font-size:18px;
 padding:0 15px 15px;
 font-size:18px;
 font-weight:bold;
-}
-
-@keyframes scroll{
-
-0%{
-transform:translateX(0);
-}
-
-100%{
-transform:translateX(calc(-275px * 10));
-}
-
-}
 }
 
 @media(max-width:768px){
@@ -255,71 +238,7 @@ height:240px;
 <h3>New Collection</h3>
 <p>Shop now</p>
 </div>
-
-<!-- Duplicate Products for Infinite Slider -->
-
-<div class="product">
-<img src="product1.jpg">
-<h3>Premium Shirt</h3>
-<p>₹899</p>
-</div>
-
-<div class="product">
-<img src="product2.jpg">
-<h3>Casual Wear</h3>
-<p>₹999</p>
-</div>
-
-<div class="product">
-<img src="product3.jpg">
-<h3>Office Wear</h3>
-<p>₹1299</p>
-</div>
-
-<div class="product">
-<img src="product4.jpg">
-<h3>Summer Collection</h3>
-<p>₹799</p>
-</div>
-
-<div class="product">
-<img src="product5.jpg">
-<h3>Formal Shirt</h3>
-<p>₹1199</p>
-</div>
-
-<div class="product">
-<img src="product6.jpg">
-<h3>Premium Polo</h3>
-<p>₹999</p>
-</div>
-
-<div class="product">
-<img src="product7.jpg">
-<h3>Denim Wear</h3>
-<p>₹1499</p>
-</div>
-
-<div class="product">
-<img src="product8.jpg">
-<h3>Luxury Tee</h3>
-<p>₹699</p>
-</div>
-
-<div class="product">
-<img src="product9.jpg">
-<h3>Classic Wear</h3>
-<p>₹899</p>
-</div>
-
-<div class="product">
-<img src="product10.jpg">
-<h3>New Collection</h3>
-<p>₹1099</p>
-</div>
-
-</div>
-
+  
 </section>
   
 <script>

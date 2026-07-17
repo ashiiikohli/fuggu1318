@@ -85,13 +85,24 @@ margin-bottom:50px;
 letter-spacing:3px;
 }
 
+.new-arrival{
+padding:80px 5%;
+background:#fff;
+overflow:hidden;
+}
+
 .arrival-slider{
 display:flex;
 gap:25px;
-width:max-content;
-animation:scroll 30s linear infinite;
+overflow:hidden;
+white-space:nowrap;
+animation:scroll 25s linear infinite;
 }
 
+.product{
+min-width:250px;
+flex:0 0 auto;
+}
 .arrival-slider:hover{
 animation-play-state:paused;
 }
@@ -139,9 +150,10 @@ transform:translateX(0);
 }
 
 100%{
-transform:translateX(-50%);
+transform:translateX(calc(-275px * 10));
 }
 
+}
 }
 
 @media(max-width:768px){

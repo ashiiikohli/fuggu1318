@@ -15,7 +15,6 @@ font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-overflow:hidden;
 background:#000;
 }
 
@@ -72,6 +71,95 @@ font-size:22px;
 
 </style>
 
+/* ================= NEW ARRIVAL ================= */
+
+.new-arrival{
+padding:80px 5%;
+background:#fff;
+}
+
+.new-arrival h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+letter-spacing:3px;
+}
+
+.arrival-slider{
+display:flex;
+gap:25px;
+width:max-content;
+animation:scroll 30s linear infinite;
+}
+
+.arrival-slider:hover{
+animation-play-state:paused;
+}
+
+.product{
+width:250px;
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+transition:.4s;
+flex-shrink:0;
+}
+
+.product:hover{
+transform:translateY(-10px);
+}
+
+.product img{
+width:100%;
+height:330px;
+object-fit:cover;
+transition:.5s;
+}
+
+.product:hover img{
+transform:scale(1.1);
+}
+
+.product h3{
+padding:15px 15px 5px;
+font-size:18px;
+}
+
+.product p{
+padding:0 15px 15px;
+font-size:18px;
+font-weight:bold;
+}
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+@media(max-width:768px){
+
+.new-arrival h2{
+font-size:28px;
+}
+
+.product{
+width:180px;
+}
+
+.product img{
+height:240px;
+}
+
+}
+  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
@@ -90,6 +178,138 @@ font-size:22px;
 
 </div>
 
+<section class="new-arrival">
+
+<h2>NEW ARRIVALS</h2>
+
+<div class="arrival-slider">
+
+<div class="product">
+<img src="product1.jpg">
+<h3>Premium Shirt</h3>
+<p>₹899</p>
+</div>
+
+<div class="product">
+<img src="product2.jpg">
+<h3>Casual Wear</h3>
+<p>₹999</p>
+</div>
+
+<div class="product">
+<img src="product3.jpg">
+<h3>Office Wear</h3>
+<p>₹1299</p>
+</div>
+
+<div class="product">
+<img src="product4.jpg">
+<h3>Summer Collection</h3>
+<p>₹799</p>
+</div>
+
+<div class="product">
+<img src="product5.jpg">
+<h3>Formal Shirt</h3>
+<p>₹1199</p>
+</div>
+
+<div class="product">
+<img src="product6.jpg">
+<h3>Premium Polo</h3>
+<p>₹999</p>
+</div>
+
+<div class="product">
+<img src="product7.jpg">
+<h3>Denim Wear</h3>
+<p>₹1499</p>
+</div>
+
+<div class="product">
+<img src="product8.jpg">
+<h3>Luxury Tee</h3>
+<p>₹699</p>
+</div>
+
+<div class="product">
+<img src="product9.jpg">
+<h3>Classic Wear</h3>
+<p>₹899</p>
+</div>
+
+<div class="product">
+<img src="product10.jpg">
+<h3>New Collection</h3>
+<p>₹1099</p>
+</div>
+
+<!-- Duplicate Products for Infinite Slider -->
+
+<div class="product">
+<img src="product1.jpg">
+<h3>Premium Shirt</h3>
+<p>₹899</p>
+</div>
+
+<div class="product">
+<img src="product2.jpg">
+<h3>Casual Wear</h3>
+<p>₹999</p>
+</div>
+
+<div class="product">
+<img src="product3.jpg">
+<h3>Office Wear</h3>
+<p>₹1299</p>
+</div>
+
+<div class="product">
+<img src="product4.jpg">
+<h3>Summer Collection</h3>
+<p>₹799</p>
+</div>
+
+<div class="product">
+<img src="product5.jpg">
+<h3>Formal Shirt</h3>
+<p>₹1199</p>
+</div>
+
+<div class="product">
+<img src="product6.jpg">
+<h3>Premium Polo</h3>
+<p>₹999</p>
+</div>
+
+<div class="product">
+<img src="product7.jpg">
+<h3>Denim Wear</h3>
+<p>₹1499</p>
+</div>
+
+<div class="product">
+<img src="product8.jpg">
+<h3>Luxury Tee</h3>
+<p>₹699</p>
+</div>
+
+<div class="product">
+<img src="product9.jpg">
+<h3>Classic Wear</h3>
+<p>₹899</p>
+</div>
+
+<div class="product">
+<img src="product10.jpg">
+<h3>New Collection</h3>
+<p>₹1099</p>
+</div>
+
+</div>
+
+</section>
+  
 <script>
 
 const desktop=[
